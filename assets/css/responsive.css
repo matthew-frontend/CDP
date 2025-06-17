@@ -1,0 +1,257 @@
+@media only screen and (max-width: 1500px) {
+
+  .section-main-2 {
+    .box-1-2 p {
+      font-size: 16px;
+    }
+  }
+
+  .group-contact p{
+    font-size: 20px!important;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .section-main-2 {
+
+    .text-1-2 {
+      font-size: 30px;
+    }
+
+    .text-2-2 {
+      font-size: 30px;
+    }
+
+    .box-1-2 p {
+      font-size: 14px;
+    }
+  }
+
+  .branding-items,
+  .games-items,
+  .literature-items,
+  .experience-items,
+  .application-items,
+  .products-items {
+    font-size: 16px;
+  }
+
+  .planning-text p{
+    font-size: 22px !important;
+  }
+
+  .group-contact p{
+    font-size: 18px!important;
+  }
+
+  .contact-head-text {
+    font-size: 40px!important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .section-main-2 {
+
+    .text-1-2 {
+      font-size: 27px;
+    }
+
+    .text-2-2 {
+      font-size: 27px;
+    }
+  }
+
+  .branding-items,
+  .games-items,
+  .literature-items,
+  .experience-items,
+  .application-items,
+  .products-items {
+    font-size: 9px;
+  }
+
+  .planning-head {
+    font-size: 30px !important;
+  }
+
+  .planning-text p{
+    font-size: 18px !important;
+  }
+
+  .group-contact p{
+    font-size: 10px!important;
+  }
+
+  .contact-head-text {
+    font-size: 27px!important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .section-main-1 {
+    & h1 {
+      font-size: 20px;
+    }
+  } 
+
+  .section-main-2 {
+
+    .text-1-2 {
+      font-size: 20px;
+    }
+
+    .text-2-2 {
+      font-size: 20px;
+    }
+
+    .box-1-2 p {
+      font-size: 7px;
+    }
+  }
+
+  .text-1-5 {
+    font-size: 15px !important;
+  }
+
+  .text-2-5 {
+    font-size: 10px !important;
+  }
+
+  .branding-items,
+  .games-items,
+  .literature-items,
+  .experience-items,
+  .application-items,
+  .products-items {
+    font-size: 7px;
+  }
+
+  .planning-text p{
+    font-size: 13px !important;
+  }
+
+  .group-contact p{
+    font-size: 7px!important;
+  }
+
+  .contact-head-text {
+    font-size: 20px!important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section-main-1 {
+    & h1 {
+      font-size: 15px;
+    }
+  } 
+
+  .section-main-2 {
+
+    /* .text-1-2 {
+      font-size: 17px;
+    } */
+
+    .text-2-2 {
+      font-size: 17px;
+    }
+
+    .box-1-2 p {
+      font-size: 5.5px;
+    }
+  }
+
+  .text-1-4 {
+    font-size: 30px!important;
+  }
+
+  .text-2-4 {
+    font-size: 30px!important;
+  }
+
+  .branding-items,
+  .games-items,
+  .literature-items,
+  .experience-items,
+  .application-items,
+  .products-items {
+    font-size: 6px;
+  }
+
+
+  .planning-head {
+    font-size: 25px !important;
+  }
+
+  .planning-text p{
+    font-size: 10px !important;
+  }
+
+  .group-contact p{
+    font-size: 5px!important;
+  }
+
+  .contact-head-text {
+    font-size: 14px!important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .section-main-2 {
+
+    .text-1-2 {
+      font-size: 12px;
+    }
+
+    .text-2-2 {
+      font-size: 12px;
+    }
+
+    .box-1-2 p {
+      font-size: 4.5px;
+    }
+  }
+
+  .text-1-5 {
+    font-size: 10px !important;
+  }
+
+  .text-2-5 {
+    font-size: 6px !important;
+  }
+
+  .branding-items,
+  .games-items,
+  .literature-items,
+  .experience-items,
+  .application-items,
+  .products-items {
+    font-size: 4px;
+  }
+
+
+  .scroll-mobile-wrapper {
+    left: -40%;
+    top: 50%;
+    width: 170%;
+  }
+
+  .planning-head {
+    font-size: 20px !important;
+  }
+
+  .planning-text p{
+    font-size: 8px !important;
+  }
+
+  .group-contact p{
+    font-size: 3px!important;
+  }
+
+  .contact-head-text {
+    font-size: 10px!important;
+  }
+}

@@ -1,0 +1,21 @@
+@use "variables/variables" as *;
+
+/*=================== Header ===================*/
+#header{
+  height: var(--header-height);
+  background-color: var(--primari-color);
+  .logo-mahidol{
+    width: 212px;
+  }
+  .logo-cdp{
+    width: 98px;
+  }
+}
+/*=================== Footer ===================*/
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}

@@ -1,0 +1,45 @@
+@use 'variables/_variables';
+@use 'components';
+@use 'style';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #fff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top -40px center;
+  @media (max-width: 1240px) {
+    background-size: auto;
+  }
+}
+
+
+body:lang(en) {
+  font-family: Helvetica, "SukhumvitSet", sans-serif;
+}
+
+a, button{
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: all .3s ease-out;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}

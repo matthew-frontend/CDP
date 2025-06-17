@@ -1,0 +1,87 @@
+:root {
+  /* Header */
+  --header-height: 94px;
+  /* Color */
+  --primari-color: #F26524;
+  --secondary-color: #26D16C;
+  --pink-color: #EB0A8E;
+  --yellow-color: #EFEB4D;
+  --blue-color: #4056A5;
+  /* Font Size */
+  --text-xl: 60px;
+  --text-lg: 50px;
+  --text-md: 32px;
+  --text-base: 23px;
+  --text-sm: 16px;
+  --text-xs: 14px;
+  /* Line Height */
+  --lineh-md: 100px;
+  --lineh-lg: 80px;
+  --lineh-sm: 50px;
+  --lineh-base: 45px;
+  --lineh-0: 0;
+  /* Z-index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  /* Hover Overlay */
+  --img-transition: all 0.3s;
+  --img-hidden: hidden;
+  --img-scale: scale(1.1);
+  /* Border Radius */
+  --border-radius-1: 0.5rem;
+  --border-radius-2: 1rem;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  :root {
+    --header-height: 80px;
+    --text-xl: 48px;
+    --text-lg: 40px;
+    --text-md: 28px;
+    --text-base: 20px;
+    --text-sm: 15px;
+    --text-xs: 13px;
+    --lineh-md: 60px;
+    --lineh-lg: 48px;
+    --lineh-sm: 32px;
+    --lineh-base: 30px;
+  }
+}
+/* Mobile */
+@media (max-width: 768px) {
+  :root {
+    --text-xl: 34px;
+    --text-lg: 30px;
+    --text-md: 24px;
+    --text-base: 14px;
+    --text-sm: 14px;
+    --text-xs: 12px;
+    --lineh-md: 30px;
+    --lineh-lg: 29px;
+    --lineh-sm: 20px;
+    --lineh-base: 20px;
+  }
+}
+/*=================== Header ===================*/
+#header {
+  height: var(--header-height);
+  background-color: var(--primari-color);
+}
+#header .logo-mahidol {
+  width: 212px;
+}
+#header .logo-cdp {
+  width: 98px;
+}
+
+/*=================== Footer ===================*/
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=components.css.map */
