@@ -111,6 +111,9 @@ main {
         grid-template-columns: repeat(6, minmax(170px, 1fr));
         gap: 0;
       }
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(6, minmax(150px, 1fr));
+      }
     }
   }
 }
@@ -1411,6 +1414,10 @@ body {
     @media (max-width: 991px) {
       grid-template-columns: repeat(5, minmax(170px, 1fr));
     }
+     @media (max-width: 768px) {
+      grid-template-columns: repeat(5, minmax(150px, 1fr));
+      gap: 0;
+    }
 
     .box-rotate {
       @media (max-width: 991px) {
@@ -1561,6 +1568,11 @@ body {
   top: -27px;
   left: -33px;
   width: 126px;
+  @media (max-width: 768px) {
+    top: -45px;
+    left: -15px;
+    width: 90px;
+  }
 }
 
 .list-thumbnail {
