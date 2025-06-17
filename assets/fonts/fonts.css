@@ -28,7 +28,7 @@
   font-family: 'Helvetica Bold';
   font-style: normal;
   font-weight: normal;
-  src: local('Helvetica'), url('Helvetica-Bold.woff') format('woff');
+  src: local('Helvetica-Bold'), url('Helvetica-Bold.woff') format('woff');
 }
 
 

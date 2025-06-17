@@ -187,6 +187,11 @@ main {
     margin-left: 0;
   }
 }
+@media (max-width: 768px) {
+  .content-display-area {
+    box-shadow: 7px 7px 0px 0px black;
+  }
+}
 @media (max-width: 767px) {
   .content-display-area {
     padding: 50px 40px;
@@ -260,8 +265,13 @@ main {
   background-color: #f2e949;
 }
 .content-display-area#content-branding .tag-asset-item {
-  left: 65%;
-  top: 78%;
+  right: 14vh;
+  bottom: -3vh;
+}
+@media (max-width: 768px) {
+  .content-display-area#content-branding .tag-asset-item {
+    right: 0;
+  }
 }
 .content-display-area#content-games {
   background-color: #ee417e;
@@ -449,6 +459,7 @@ main {
   font-size: var(--text-sm);
   font-weight: 700;
   margin-top: 0.5rem;
+  font-family: "Helvetica Bold";
 }
 .section-main-1 .container-box .shadow {
   position: absolute;
@@ -652,6 +663,15 @@ main {
   transform: rotate(1deg);
   z-index: 0;
 }
+@media (max-width: 768px) {
+  .section-main-2 .skew-container .skew-shadow {
+    top: 12px;
+    left: 16px;
+    width: 98%;
+    height: 99%;
+    transform: rotate(0deg);
+  }
+}
 .section-main-2 .skew-container .skew-box {
   background-color: #4caf50;
   padding: 36px 42px 44px 42px;
@@ -744,7 +764,8 @@ main {
 .section-main-3 .promo-video p {
   color: #fff;
 }
-.section-main-3 .promo-video video {
+.section-main-3 .promo-video video,
+.section-main-3 .promo-video iframe {
   width: 100%;
   height: 100%;
 }
@@ -895,11 +916,13 @@ main {
 @media (max-width: 768px) {
   .section-main-4 .box-planning {
     padding: 15px;
+    box-shadow: 7px 7px 0 0 black;
   }
 }
 .section-main-4 .box-planning p {
   font-size: var(--text-base);
   font-weight: 700;
+  font-family: "Helvetica Bold";
 }
 .section-main-4 .box-planning .planning-left {
   text-align: right;
@@ -1048,6 +1071,11 @@ main {
   border-radius: 3px;
   box-shadow: 15px 15px 0 0 var(--pink-color);
 }
+@media (max-width: 768px) {
+  .section-main-5 .image-map {
+    box-shadow: 7px 7px 0 0 var(--pink-color);
+  }
+}
 .section-main-5 .image-map .map {
   width: 100%;
   height: 100%;
@@ -1170,12 +1198,12 @@ main {
   position: absolute;
   width: 100%;
   left: 0%;
-  top: -5.1vw;
+  top: -4.1vw;
   z-index: 10;
 }
-@media (min-width: 1680px) {
+@media (min-width: 1630px) {
   .section-main-7 .bg-head-7 {
-    top: -5vw;
+    top: -4.1vw;
   }
 }
 .section-main-7 .asset-1-7 {
@@ -1559,6 +1587,9 @@ body.bg-work-page {
 .box-project .grid-project .right-project p {
   color: #000;
   margin-bottom: 40px;
+}
+.box-project .grid-project .right-project p:last-child {
+  font-family: "SukhumvitSet";
 }
 
 .video-project {
