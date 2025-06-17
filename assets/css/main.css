@@ -347,6 +347,11 @@ main {
   align-items: center;
   flex-direction: column;
 }
+@media (max-width: 767px) {
+  .flag-container {
+    padding-left: 0;
+  }
+}
 .flag-container .flag {
   width: 100%;
   height: 25%;
@@ -354,11 +359,15 @@ main {
 
 #mainScooter {
   position: fixed;
-  width: 10%;
-  height: 10%;
-  top: 20%;
-  right: 2%;
+  width: 10vh;
+  top: 22%;
+  right: 3.6%;
   z-index: 11;
+}
+@media (max-width: 991px) {
+  #mainScooter {
+    right: 0;
+  }
 }
 
 /********************************************* section banner *********************************************/
@@ -1163,6 +1172,11 @@ main {
   left: 0%;
   top: -5.1vw;
   z-index: 10;
+}
+@media (min-width: 1680px) {
+  .section-main-7 .bg-head-7 {
+    top: -5vw;
+  }
 }
 .section-main-7 .asset-1-7 {
   display: inline-block;

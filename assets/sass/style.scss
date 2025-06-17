@@ -304,6 +304,9 @@ main {
   padding-left: 2%;
   align-items: center;
   flex-direction: column;
+  @media (max-width: 767px) {
+    padding-left: 0;
+  }
 
   .flag {
     width: 100%;
@@ -314,11 +317,14 @@ main {
 
 #mainScooter {
   position: fixed;
-  width: 10%;
-  height: 10%;
-  top: 20%;
-  right: 2%;
+  width: 10vh;
+  // height: 10%;
+  top: 22%;
+  right: 3.6%;
   z-index: 11;
+  @media (max-width: 991px) {
+    right: 0;
+  }
 }
 
 /********************************************* section banner *********************************************/
@@ -1255,6 +1261,9 @@ main {
     left: 0%;
     top: -5.1vw;
     z-index: 10;
+    @media (min-width: 1680px) {
+      top: -5vw;
+    }
   }
 
   .asset-1-7 {
