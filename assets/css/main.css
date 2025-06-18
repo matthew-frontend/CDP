@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   /* Header */
   --header-height: 94px;
@@ -133,6 +134,10 @@ main {
   overflow: hidden;
 }
 
+#section3 {
+  scroll-margin-top: 80px;
+}
+
 #header {
   height: var(--header-height);
   background-color: var(--primari-color);
@@ -150,7 +155,6 @@ main {
 }
 
 .scroll-mobile-wrapper {
-  width: 90%;
   z-index: 10;
   margin-bottom: 130px;
 }
@@ -160,19 +164,28 @@ main {
     width: 100%;
   }
 }
+.scroll-mobile-wrapper .scroll-mobile {
+  overflow: unset;
+}
 .scroll-mobile-wrapper .scroll-mobile .grid-item {
   grid-template-columns: repeat(6, 1fr);
   gap: 25px;
 }
 @media (max-width: 991px) {
   .scroll-mobile-wrapper .scroll-mobile .grid-item {
-    grid-template-columns: repeat(6, minmax(170px, 1fr));
-    gap: 0;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .scroll-mobile-wrapper .scroll-mobile .grid-item {
-    grid-template-columns: repeat(6, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .scroll-mobile-wrapper .scroll-mobile .grid-item .box-rotate {
+    transform: scale(0.7);
   }
 }
 
@@ -372,6 +385,69 @@ main {
   height: 25%;
 }
 
+.flag-fixed {
+  position: fixed;
+  right: 58px;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 87px;
+  padding-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .flag-fixed {
+    right: 10px;
+    gap: 72px;
+  }
+}
+.flag-fixed::after {
+  content: "";
+  background-image: url(../images/border-flag.svg);
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 768px) {
+  .flag-fixed::after {
+    width: 5px;
+    left: 5px;
+  }
+}
+.flag-fixed .button-flag {
+  height: 47px;
+  width: 66px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .flag-fixed .button-flag {
+    height: 40px;
+    width: 55px;
+  }
+}
+.flag-fixed .button-flag img {
+  width: 100%;
+  height: 100%;
+}
+.flag-fixed .cop-bike {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: top 0.5s ease;
+  width: 72px;
+  z-index: 15;
+}
+@media (max-width: 768px) {
+  .flag-fixed .cop-bike {
+    width: 60px;
+  }
+}
+
 #mainScooter {
   position: fixed;
   width: 10vh;
@@ -390,6 +466,8 @@ main {
   width: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 11;
 }
 
 .section-banner img {
@@ -446,6 +524,11 @@ main {
   left: 5rem;
   z-index: 2;
 }
+@media (max-width: 500px) {
+  .section-main-1 .container-box {
+    top: 6rem;
+  }
+}
 .section-main-1 .container-box .content-box {
   background-color: #26D16C;
   width: 100%;
@@ -485,7 +568,7 @@ main {
 }
 @media (max-width: 500px) {
   .section-main-1 .container-box2 {
-    top: 9rem;
+    top: 7rem;
   }
 }
 .section-main-1 .container-box2 .content-box2 {
@@ -635,6 +718,19 @@ main {
   color: #000;
   position: relative;
 }
+.section-main-2 .control-padding {
+  padding-left: 120px;
+}
+@media (max-width: 991px) {
+  .section-main-2 .control-padding {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .section-main-2 .control-padding {
+    padding-left: 0;
+  }
+}
 .section-main-2 .text-1-2 {
   z-index: 2;
   font-size: var(--text-lg);
@@ -644,6 +740,7 @@ main {
 @media (max-width: 768px) {
   .section-main-2 .text-1-2 {
     margin-bottom: 20px;
+    font-size: 24px;
   }
 }
 .section-main-2 .text-2-2 {
@@ -694,9 +791,22 @@ main {
   bottom: -21vh;
   z-index: 5;
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .section-main-2 .asset-1-2 {
     width: 90px;
+    bottom: -15vh;
+  }
+}
+@media (max-width: 768px) {
+  .section-main-2 .asset-1-2 {
+    width: 60px;
+    bottom: -10vh;
+  }
+}
+@media (max-width: 500px) {
+  .section-main-2 .asset-1-2 {
+    width: 45px;
+    bottom: -9vh;
   }
 }
 .section-main-2 .asset-endsection-2 {
@@ -716,23 +826,63 @@ main {
   margin-top: 0px;
   z-index: 4;
   padding-top: 380px;
-  background-image: linear-gradient(to bottom, transparent 50%, #26D16C 50%), url(../../assets/images/asset-main-3/bg-main-3.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  padding-bottom: 200px;
+  background: linear-gradient(#fff 20%, #26D16C 0%);
+  padding-bottom: 300px;
 }
 @media (max-width: 991px) {
   .section-main-3 {
-    padding-top: 280px;
+    padding-top: 180px;
+    background: linear-gradient(#fff 10%, #26D16C 0%);
   }
+}
+@media (max-width: 768px) {
+  .section-main-3 {
+    background: linear-gradient(#fff 8%, #26D16C 0%);
+    padding-bottom: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .section-main-3 {
+    padding-bottom: 100px;
+  }
+}
+.section-main-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/bg-section3-top.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  z-index: -1;
+}
+.section-main-3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* ปรับตามขนาดรูป */
+  background-image: url("../images/bg-section3-bottom.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% auto;
+  z-index: -1;
 }
 .section-main-3 .image-bike {
   position: absolute;
   left: 0%;
-  bottom: -11vw;
+  bottom: -4vw;
   z-index: 2;
   max-width: 33vw;
+}
+@media (max-width: 767px) {
+  .section-main-3 .image-bike {
+    max-width: 45vw;
+  }
 }
 .section-main-3 .asset-1-3 {
   margin-bottom: 100px;
@@ -863,7 +1013,8 @@ main {
 @media (max-width: 768px) {
   .section-main-4 .asset-3-4 {
     left: -2vw;
-    top: -7vw;
+    top: -9vw;
+    width: 20vw;
   }
 }
 .section-main-4 .asset-4-4 {
@@ -1058,6 +1209,11 @@ main {
 .section-main-5 .text-1-5 {
   font-family: "Heavitas";
   font-size: var(--text-base);
+}
+@media (max-width: 768px) {
+  .section-main-5 .text-1-5 {
+    font-size: var(--text-md);
+  }
 }
 .section-main-5 .text-2-5 {
   font-size: var(--text-sm);

@@ -99,10 +99,6 @@
 
   .section-main-2 {
 
-    .text-1-2 {
-      font-size: 20px;
-    }
-
     .text-2-2 {
       font-size: 20px;
     }
@@ -110,14 +106,6 @@
     .box-1-2 p {
       font-size: 7px;
     }
-  }
-
-  .text-1-5 {
-    font-size: 15px !important;
-  }
-
-  .text-2-5 {
-    font-size: 10px !important;
   }
 
   .branding-items,
@@ -215,14 +203,6 @@
     }
   }
 
-  .text-1-5 {
-    font-size: 10px !important;
-  }
-
-  .text-2-5 {
-    font-size: 6px !important;
-  }
-
   .branding-items,
   .games-items,
   .literature-items,
@@ -233,11 +213,11 @@
   }
 
 
-  .scroll-mobile-wrapper {
+  /* .scroll-mobile-wrapper {
     left: -40%;
     top: 50%;
     width: 170%;
-  }
+  } */
 
   .planning-head {
     font-size: 20px !important;
