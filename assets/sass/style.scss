@@ -790,7 +790,7 @@ main {
     }
     @media (max-width: 500px) {
       width: 45px;
-      bottom: -9vh;
+      bottom: -6vh;
     }
   }
 
@@ -1449,32 +1449,26 @@ body {
 }
 
 .head-title {
-  background-image: url(../images/head-braning.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 378px;
-  height: 202px;
-  padding-top: 63px;
-  padding-right: 20px;
-  text-align: right;
-  margin: 50px auto 36px;
-
-  @media (max-width: 767px) {
-    height: 169px;
-    background-position: top center;
-    background-size: 85%;
-    padding-top: 45px;
-    padding-right: 55px;
+  margin: 48px auto 80px;
+  max-width: 340px;
+  @media (max-width: 768px) {
+    max-width: 300px;
   }
-
-  h2 {
-    color: #000;
+  &.box-rotate .bg-rotate{
+    height: 130px;
+    transform: rotate(5.8deg);
+    top: 25px;
+    right: 20px;
+    @media (max-width: 768px) {
+      max-width: 300px;
+    }
+  }
+  &.box-rotate .text-rotate{
+    height: 130px;
     font-family: 'Heavitas';
-    font-size: 50px;
-    line-height: 100%;
-
-    @media (max-width: 767px) {
-      font-size: 36px;
+    font-size: var(--text-lg);
+    @media (max-width: 768px) {
+      max-width: 300px;
     }
   }
 }
@@ -1522,8 +1516,7 @@ body {
 
 .box-rotate {
   position: relative;
-
-  span.text-rotate {
+  .text-rotate {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1535,13 +1528,13 @@ body {
     text-align: center;
     position: relative;
     z-index: 10;
-
     @media (max-width: 1440px) {
-      font-size: 19px;
+      font-size: 16px;
+      padding: 0 10px;
     }
   }
 
-  span.bg-rotate {
+  .bg-rotate {
     position: absolute;
     top: 20px;
     right: 15px;
@@ -1553,69 +1546,79 @@ body {
   }
 
   &.rotate-branding {
-    span.text-rotate {
+    .text-rotate {
       background-color: #ed6b2d;
       color: #fff;
     }
 
-    span.bg-rotate {
+    .bg-rotate {
       background-color: #f2e949;
     }
   }
 
   &.rotate-game {
-    span.text-rotate {
+    .text-rotate {
       background-color: #4557A3;
       color: #fff;
     }
 
-    span.bg-rotate {
+    .bg-rotate {
       background-color: #EE417E;
     }
   }
 
   &.rotate-literature {
-    span.text-rotate {
+    .text-rotate {
       background-color: #F1EC48;
       color: #000;
     }
 
-    span.bg-rotate {
-      background-color: #EE417E;
+    .bg-rotate {
+      background-color: #53B867;
     }
   }
 
   &.rotate-immersive {
-    span.text-rotate {
+    .text-rotate {
       background-color: #53B867;
       color: #000;
       height: 77.47px;
     }
 
-    span.bg-rotate {
+    .bg-rotate {
       background-color: #F26524;
     }
   }
 
   &.rotate-application {
-    span.text-rotate {
+    .text-rotate {
       background-color: #EE018D;
       color: #fff;
     }
 
-    span.bg-rotate {
+    .bg-rotate {
       background-color: #fff;
     }
   }
 
   &.rotate-product {
-    span.text-rotate {
+    .text-rotate {
       background-color: #fff;
       color: #000;
     }
 
-    span.bg-rotate {
+    .bg-rotate {
       background-color: #4557A3;
+    }
+  }
+  &.rotate-title {
+    .text-rotate {
+      background-color: #ED6B2D;
+      color: #000;
+    }
+
+    .bg-rotate {
+      background-color: #F2E949;
     }
   }
 }

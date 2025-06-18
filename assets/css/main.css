@@ -806,7 +806,7 @@ main {
 @media (max-width: 500px) {
   .section-main-2 .asset-1-2 {
     width: 45px;
-    bottom: -9vh;
+    bottom: -6vh;
   }
 }
 .section-main-2 .asset-endsection-2 {
@@ -1429,34 +1429,33 @@ body.bg-work-page {
 }
 
 .head-title {
-  background-image: url(../images/head-braning.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 378px;
-  height: 202px;
-  padding-top: 63px;
-  padding-right: 20px;
-  text-align: right;
-  margin: 50px auto 36px;
+  margin: 48px auto 80px;
+  max-width: 340px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .head-title {
-    height: 169px;
-    background-position: top center;
-    background-size: 85%;
-    padding-top: 45px;
-    padding-right: 55px;
+    max-width: 300px;
   }
 }
-.head-title h2 {
-  color: #000;
-  font-family: "Heavitas";
-  font-size: 50px;
-  line-height: 100%;
+.head-title.box-rotate .bg-rotate {
+  height: 130px;
+  transform: rotate(5.8deg);
+  top: 25px;
+  right: 20px;
 }
-@media (max-width: 767px) {
-  .head-title h2 {
-    font-size: 36px;
+@media (max-width: 768px) {
+  .head-title.box-rotate .bg-rotate {
+    max-width: 300px;
+  }
+}
+.head-title.box-rotate .text-rotate {
+  height: 130px;
+  font-family: "Heavitas";
+  font-size: var(--text-lg);
+}
+@media (max-width: 768px) {
+  .head-title.box-rotate .text-rotate {
+    max-width: 300px;
   }
 }
 
@@ -1505,7 +1504,7 @@ body.bg-work-page {
 .box-rotate {
   position: relative;
 }
-.box-rotate span.text-rotate {
+.box-rotate .text-rotate {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1519,11 +1518,12 @@ body.bg-work-page {
   z-index: 10;
 }
 @media (max-width: 1440px) {
-  .box-rotate span.text-rotate {
-    font-size: 19px;
+  .box-rotate .text-rotate {
+    font-size: 16px;
+    padding: 0 10px;
   }
 }
-.box-rotate span.bg-rotate {
+.box-rotate .bg-rotate {
   position: absolute;
   top: 20px;
   right: 15px;
@@ -1533,48 +1533,55 @@ body.bg-work-page {
   transform: rotate(5.47deg);
   display: flex;
 }
-.box-rotate.rotate-branding span.text-rotate {
+.box-rotate.rotate-branding .text-rotate {
   background-color: #ed6b2d;
   color: #fff;
 }
-.box-rotate.rotate-branding span.bg-rotate {
+.box-rotate.rotate-branding .bg-rotate {
   background-color: #f2e949;
 }
-.box-rotate.rotate-game span.text-rotate {
+.box-rotate.rotate-game .text-rotate {
   background-color: #4557A3;
   color: #fff;
 }
-.box-rotate.rotate-game span.bg-rotate {
+.box-rotate.rotate-game .bg-rotate {
   background-color: #EE417E;
 }
-.box-rotate.rotate-literature span.text-rotate {
+.box-rotate.rotate-literature .text-rotate {
   background-color: #F1EC48;
   color: #000;
 }
-.box-rotate.rotate-literature span.bg-rotate {
-  background-color: #EE417E;
+.box-rotate.rotate-literature .bg-rotate {
+  background-color: #53B867;
 }
-.box-rotate.rotate-immersive span.text-rotate {
+.box-rotate.rotate-immersive .text-rotate {
   background-color: #53B867;
   color: #000;
   height: 77.47px;
 }
-.box-rotate.rotate-immersive span.bg-rotate {
+.box-rotate.rotate-immersive .bg-rotate {
   background-color: #F26524;
 }
-.box-rotate.rotate-application span.text-rotate {
+.box-rotate.rotate-application .text-rotate {
   background-color: #EE018D;
   color: #fff;
 }
-.box-rotate.rotate-application span.bg-rotate {
+.box-rotate.rotate-application .bg-rotate {
   background-color: #fff;
 }
-.box-rotate.rotate-product span.text-rotate {
+.box-rotate.rotate-product .text-rotate {
   background-color: #fff;
   color: #000;
 }
-.box-rotate.rotate-product span.bg-rotate {
+.box-rotate.rotate-product .bg-rotate {
   background-color: #4557A3;
+}
+.box-rotate.rotate-title .text-rotate {
+  background-color: #ED6B2D;
+  color: #000;
+}
+.box-rotate.rotate-title .bg-rotate {
+  background-color: #F2E949;
 }
 
 .box-tag {
