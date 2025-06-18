@@ -721,14 +721,15 @@ main {
 .section-main-2 .control-padding {
   padding-left: 120px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .section-main-2 .control-padding {
-    padding-left: 50px;
+    padding-left: 40px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .section-main-2 .control-padding {
     padding-left: 0;
+    padding-right: 10%;
   }
 }
 .section-main-2 .text-1-2 {
@@ -791,22 +792,22 @@ main {
   bottom: -21vh;
   z-index: 5;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .section-main-2 .asset-1-2 {
     width: 90px;
-    bottom: -15vh;
+    bottom: -8vh;
   }
 }
 @media (max-width: 768px) {
   .section-main-2 .asset-1-2 {
     width: 60px;
-    bottom: -10vh;
+    bottom: -8vh;
   }
 }
 @media (max-width: 500px) {
   .section-main-2 .asset-1-2 {
     width: 45px;
-    bottom: -6vh;
+    bottom: -5.5vh;
   }
 }
 .section-main-2 .asset-endsection-2 {

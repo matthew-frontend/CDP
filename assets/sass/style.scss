@@ -709,11 +709,12 @@ main {
   position: relative;
   .control-padding{
     padding-left: 120px;
-    @media (max-width: 991px) {
-      padding-left: 50px;
+    @media (max-width: 1024px) {
+      padding-left: 40px;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 991px) {
       padding-left: 0;
+      padding-right: 10%;
     }
   }
   & .text-1-2 {
@@ -780,17 +781,17 @@ main {
     right: 27vw;
     bottom: -21vh;
     z-index: 5;
-    @media (max-width: 991px) {
+    @media (max-width: 1024px) {
       width: 90px;
-      bottom: -15vh;
+      bottom: -8vh;
     }
     @media (max-width: 768px) {
       width: 60px;
-      bottom: -10vh;
+      bottom: -8vh;
     }
     @media (max-width: 500px) {
       width: 45px;
-      bottom: -6vh;
+      bottom: -5.5vh;
     }
   }
 
